@@ -1,0 +1,250 @@
+header {
+	background-color: lightyellow;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header img {
+	width: 50px;
+	height: 50px;
+}
+
+header h1 {
+	color: gold;
+	text-align: center;
+	font-family: 'Times New Roman';
+	padding: 20px;
+}
+
+.login {
+	text-decoration: none;
+	color: gold;
+	font-size: 25px;
+	padding: 20px;
+}
+
+.logo {
+	padding-left: 2%;
+}
+
+header a:hover {
+	color: darkgoldenrod;
+}
+
+header div {
+	align-self: flex-end;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	background-color: lightyellow;
+	padding-top: 10px;
+	margin-top: 0.5;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+
+nav ul a {
+	text-decoration: none;
+	color: gold;
+	font-size: 30px;
+}
+
+nav ul a:hover {
+	color: darkgoldenrod;
+}
+
+nav {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(230, 222, 177);
+}
+
+main article p {
+	font-size: 20px;
+	padding: 10px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.artikli {
+	flex: 2;
+}
+
+.artikli article {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.artikli,
+	aside {
+		flex: auto;
+		width: fit-content;
+		height: fit-content;
+	}
+}
+
+.slideshow-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.slideshow-container div {
+	width: 100%;
+	height: 100%;
+}
+
+aside div div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+aside {
+	flex: 1;
+	position: relative;
+	border-radius: 2%;
+	border: 7px solid lightyellow;
+}
+
+.firstRow {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	padding: 10px;
+}
+
+.FirstArticle {
+	border: 3px solid black;
+	border-radius: 10px;
+	height: fit-content;
+	background-color: lightyellow;
+	margin-bottom: 5px;
+}
+
+
+
+
+.mySlides {
+	display: none;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 10px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.mySlides {
+	display: none;
+}
+
+
+
+
+footer {
+	width: 100%;
+	height: 150px;
+	background-color: lightyellow;
+	justify-content: space-between;
+	display: flex;
+}
+
+footer div ul {
+	list-style: none;
+	display: flex;
+
+}
+
+.footerimage {
+	width: 70px;
+	height: 70px;
+}
+
+footer div p {
+	color: black;
+	font-size: 20px;
+}
+
+.lijeviFooter {
+	margin-left: 10px;
+}
